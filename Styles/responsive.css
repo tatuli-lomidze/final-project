@@ -3,12 +3,13 @@
 
 @media (max-width: 1201px)  {
     /* header */
+
     .ul-items {
         gap: 40px;
     }
     /* section - whats your next destination  */
     .home-page-text { 
-        margin-top: 25%; }
+        top: 15%; }
 }
 
 /* max-width: 1024px*/
@@ -17,6 +18,10 @@
     .ul-items {
         gap: 36px;
     }
+    /* section - whats your next destination  */
+    .home-page-text {
+        top: 20%;
+      }
 }
 
 /* max-width: 768px*/
@@ -30,19 +35,18 @@
     }
     .home-page-paragraph {
         display: none;
-    }
-    .home-page-text h1 {
+      }
+      .home-page-text h1 {
         font-size: 28px;
-    }
-
-    .home-page-text p {
+      }
+      .home-page-text p {
         font-size: 20px;
-    }
-    .home-page-text { 
-        margin-left: 15%;
-        margin-top: 40%;
+      }
+      .home-page-text {
+        left: 15%;
+        top: 30%;
         padding: 5%;
-     }
+      }
      /* subscribe section  */
      .input-element {
         max-width: 400px;
@@ -63,8 +67,8 @@
         display: none;
     }
     .home-page-text { 
-        margin-left: 15%;
-        margin-top: 70%;
+        left: 5%;
+        top: 15%;
         padding: 7%;
      }
      .home-page-text h1 {

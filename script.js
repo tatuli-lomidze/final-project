@@ -98,3 +98,33 @@ function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+
+// show border-bottom on navbar while scrolling
+
+let navbar = document.querySelector('.header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+// banner slider
+
+var currentBanner = 1;
+var totalBanners = 3;
+var slideshowElement = document.getElementById("slideshow");
+
+function changeBanner() {
+  var nextBanner = (currentBanner % totalBanners) + 1;
+  var currentBannerElement = document.getElementById("banner" + currentBanner);
+  var nextBannerElement = document.getElementById("banner" + nextBanner);
+
+  currentBannerElement.classList.remove("active");
+  nextBannerElement.classList.add("active");
+
+  currentBanner = nextBanner;
+}
+
+setInterval(changeBanner, 3000);
