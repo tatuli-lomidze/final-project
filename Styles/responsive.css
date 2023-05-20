@@ -1,0 +1,127 @@
+/* max-width: 1201px  */
+
+
+@media (max-width: 1201px)  {
+    /* header */
+    .ul-items {
+        gap: 40px;
+    }
+    /* section - whats your next destination  */
+    .home-page-text { 
+        margin-top: 25%; }
+}
+
+/* max-width: 1024px*/
+@media (max-width: 1024px)  {
+    /* header */
+    .ul-items {
+        gap: 36px;
+    }
+}
+
+/* max-width: 768px*/
+
+@media (max-width: 768px) {
+    /* header */
+    .header-block {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .home-page-paragraph {
+        display: none;
+    }
+    .home-page-text h1 {
+        font-size: 28px;
+    }
+
+    .home-page-text p {
+        font-size: 20px;
+    }
+    .home-page-text { 
+        margin-left: 15%;
+        margin-top: 40%;
+        padding: 5%;
+     }
+     /* subscribe section  */
+     .input-element {
+        max-width: 400px;
+        width: 100%; }
+
+ 
+}
+
+/* max-width: 480px */
+@media (max-width: 480px)  {
+    /* header */    
+    .header-block {
+        gap: 0px;
+        margin-bottom: 0px;  
+        align-items: flex-start;    
+    }
+    .home-page-paragraph {
+        display: none;
+    }
+    .home-page-text { 
+        margin-left: 15%;
+        margin-top: 70%;
+        padding: 7%;
+     }
+     .home-page-text h1 {
+        font-size: 28px;
+    }
+    .home-page-text p {
+        font-size: 20px;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .toggle-button.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .toggle-button.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .toggle-button.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    } 
+    .ul-items {
+        position: fixed;
+        height: 100vh;
+        left: -100%;
+        padding-top: 40%;
+        flex-direction: column;
+        background-image: url("../IMG/burger-background.jpg");
+        background-size: cover;
+        width: 100%;
+        align-items: center; 
+        font-size:x-large;
+        font-weight:bold;
+        transition: 1s;    
+    }
+    .list-items {
+        color:blanchedalmond;
+    }
+   .ul-items.active {
+        left: 0;
+    }
+    .body.active {
+        overflow: hidden;
+    }
+     /* subscribe section  */
+     .input-element {
+        max-width: 270px;
+        width: 100%; }
+
+    /* hover effects */
+
+    /* header */
+
+    .list-items:hover {
+        border-bottom: 3px solid ;
+        color:slategrey;
+        font-size: 35px;
+    }
+
+}
+

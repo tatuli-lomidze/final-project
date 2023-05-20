@@ -1,0 +1,143 @@
+/* Traveller - Styles */
+
+/* header */
+.header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background-color: white;
+}
+.header-block  {
+    max-width: 1700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.logo-image {
+    transition-duration: 0.5s;
+}
+.ul-items {
+    display: flex;
+    gap: 43px;
+}
+.list-items {
+    color: black;
+    transition: 1s ease-in-out;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    transition-duration: 0.5s;
+}
+ .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    -webkit-transition: width 1s, height 1s, transform 1s;
+    ;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+/* section - whats your next destination  */
+
+.banner-image {
+    display: flex;
+    position: relative;
+    height: 852.26px;
+}
+.banner-image img {
+    width: 100%;
+    opacity: 75%;
+    object-fit: cover;
+}
+.home-page-text {
+    background-color: rgba(121, 85, 72, 0.3);
+    opacity: 80%;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+    padding: 4%;
+}
+.home-page-text h1 {
+    font-size: 35px;
+    font-family: 'Inter-ExtraBold';
+    color: white;    
+    margin-bottom: 25px;
+} 
+.home-page-text h1::first-letter{
+    font-size: 40px;
+}
+.home-page-text p {
+    font-size: 22px;
+    font-family: 'Inter-Medium';
+    color:black;
+    margin-bottom: 18px;
+
+}
+
+/* subscribe section  */
+.subscribe-container {
+    background-image: url("../IMG/banner1.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    opacity: 0.7;
+
+}
+.subscribe-container h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Inter-ExtraBold';
+    margin-bottom: 50px;
+}
+.form-wrapper{
+    text-align: center;
+    
+}
+.input-element {
+    max-width: 700px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* hover effects*/
+
+/* header */
+.list-items:hover {
+    border-bottom: 3px solid;
+    color:slategrey;
+    font-size: 18px;
+}
+.logo-image:hover {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 70px slategrey;
+}
+.home-page-text:hover {
+    opacity: 100%;
+}
+.toggle-button:hover {
+    width: 35px;
+}
+/* section - whats your next destination */
+.banner-image img:hover {
+    opacity: 100%;
+}
+/* subscribe section  */
+.subscribe-container:hover {
+    opacity: 0.9;
+}
