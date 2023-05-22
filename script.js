@@ -149,6 +149,6 @@ slideshows.forEach((slideshow) => {
     currentSlide = nextSlide;
   }
 
-  setInterval(changeSlide, 3000);
+  setInterval(changeSlide, 5000);
 });
 

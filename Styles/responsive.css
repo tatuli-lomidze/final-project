@@ -18,6 +18,10 @@
     .ul-items {
         gap: 36px;
     }
+      /* journeys section */
+       .journeys-section {
+         gap: 70px;
+  }
     /* section - whats your next destination  */
     .home-page-text {
         top: 20%;

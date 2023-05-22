@@ -124,6 +124,75 @@
 
   } */
 
+  /* journeys section */
+.journeys-section {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin: 100px auto;
+  }
+  
+  .journeys-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+  }
+  
+  .journeys-slideshow {
+    position: relative;
+    max-width: 360px;
+    width: 360px;
+    max-height: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .journeys-slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  .journeys-slideshow img.active {
+    opacity: 1;
+  }
+  
+  .journeys-container.left h2 {
+    font-size: 100px;
+    max-width: 360px;
+    width: 100%;
+    /* border-radius: 16% 84% 8% 92% / 82% 12% 88% 18%; */
+    margin-bottom: 20px;
+  }
+
+  .journeys-text-wrapper {
+   font-size: 25px;
+   border-radius: 30px;
+   padding: 10px;
+   margin-top: 10px;
+ }
+ .journeys-text-wrapper h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .journey-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+
+ }
+
 
 /* subscribe section  */
 .subscribe-container {
@@ -153,55 +222,6 @@
     border-radius: 4px;
 }
 
-/* journeys section */
-.journeys-section {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    flex-wrap: wrap;
-  }
-  
-  .journeys-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .journeys-slideshow {
-    position: relative;
-    max-width: 360px;
-    max-height: 600px;
-    width: 360px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    border-radius: 15px;
-  }
-  
-  .journeys-slideshow img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-  }
-  
-  .journeys-slideshow img.active {
-    opacity: 1;
-  }
-  
-  .journeys-container.left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
- 
-
-
 
 
 /* hover effects*/
@@ -217,10 +237,14 @@
     border-radius: 10px;
     box-shadow: 20px 20px 70px slategrey;
 }
+
+/* section - whats your next destination  */
+
 .home-page-text:hover {
     opacity: 100%;
 }
 .toggle-button:hover {
     width: 35px;
 }
+
 
