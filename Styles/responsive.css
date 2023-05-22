@@ -33,6 +33,12 @@
         gap: 20px;
         padding-bottom: 20px;
     }
+
+    .list-items {
+        font-size: 14px;
+    }
+
+    /* choose your destination */
     .home-page-paragraph {
         display: none;
       }
@@ -50,7 +56,8 @@
      /* subscribe section  */
      .input-element {
         max-width: 400px;
-        width: 100%; }
+        width: 100%;
+     }
 
  
 }
@@ -112,6 +119,17 @@
     .body.active {
         overflow: hidden;
     }
+
+    /* journeys section */
+
+    .journeys-slideshow {
+        width: 290px;
+        height: 483px;
+      }
+      #slide {
+        width: 100%;
+      }
+      
      /* subscribe section  */
      .input-element {
         max-width: 270px;

@@ -99,7 +99,7 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
-// show border-bottom on navbar while scrolling
+// show border-bottom and change opacity on navbar while scrolling
 
 let navbar = document.querySelector('.header');
 window.addEventListener('scroll', () => {
@@ -112,14 +112,14 @@ window.addEventListener('scroll', () => {
 
 // banner slider
 
-var currentBanner = 1;
-var totalBanners = 3;
-var slideshowElement = document.getElementById("slideshow");
+let currentBanner = 1;
+let totalBanners = 3;
+let slideshowElement = document.getElementById("slideshow");
 
 function changeBanner() {
-  var nextBanner = (currentBanner % totalBanners) + 1;
-  var currentBannerElement = document.getElementById("banner" + currentBanner);
-  var nextBannerElement = document.getElementById("banner" + nextBanner);
+  let nextBanner = (currentBanner % totalBanners) + 1;
+  let currentBannerElement = document.getElementById("banner" + currentBanner);
+  let nextBannerElement = document.getElementById("banner" + nextBanner);
 
   currentBannerElement.classList.remove("active");
   nextBannerElement.classList.add("active");
@@ -128,3 +128,27 @@ function changeBanner() {
 }
 
 setInterval(changeBanner, 3000);
+
+// journey section slider 
+
+let slideshows = document.querySelectorAll(".journeys-slideshow");
+
+slideshows.forEach((slideshow) => {
+  let currentSlide = 1;
+  let totalSlides = 3;
+  let slideElements = slideshow.querySelectorAll(".slide");
+
+  function changeSlide() {
+    let nextSlide = (currentSlide % totalSlides) + 1;
+    let currentSlideElement = slideshow.querySelector(".slide" + currentSlide);
+    let nextSlideElement = slideshow.querySelector(".slide" + nextSlide);
+
+    currentSlideElement.classList.remove("active");
+    nextSlideElement.classList.add("active");
+
+    currentSlide = nextSlide;
+  }
+
+  setInterval(changeSlide, 3000);
+});
+
