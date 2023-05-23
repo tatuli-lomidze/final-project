@@ -136,7 +136,7 @@
   .journeys-container {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: center;
 
   }
   
@@ -171,30 +171,51 @@
     font-size: 100px;
     max-width: 360px;
     width: 100%;
-    /* border-radius: 16% 84% 8% 92% / 82% 12% 88% 18%; */
     margin-bottom: 20px;
+    text-shadow: 1px 1px slategrey;
   }
 
   .journeys-text-wrapper {
+    max-width: 360px;
+    width: 100%;
    font-size: 25px;
    border-radius: 30px;
    padding: 10px;
    margin-top: 10px;
- }
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   cursor: pointer;
+   background-color: white;
+   border-bottom: 3px solid slategrey;
+   border-left: 1px solid slategrey;
+   box-shadow: 1px 1px 10px slategray;
+   color: slategrey;
+   transition: width 0.3s ease;
+
+}
+
  .journeys-text-wrapper h3 {
     margin-top: 20px;
     margin-bottom: 20px;
  }
 
  .journey-button {
+    max-width: 300px;
+    width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
     outline: none;
-    background-color:slategray;
+    background-color: darkgrey;
     color:white;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    
   }
   
 /* subscribe section  */
@@ -243,7 +264,11 @@
   /* journeys section */
 
 .journey-button:hover {
-    background-color:darkgrey;
+    background-color: black;
+  }
+
+  .journeys-text-wrapper:hover {
+    width: 320px;
   }
 
 /* section - whats your next destination  */
