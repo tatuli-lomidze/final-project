@@ -101,12 +101,12 @@ function isValidEmail(email) {
 
 // show border-bottom and change opacity on navbar while scrolling
 
-let navbar = document.querySelector('.header');
-window.addEventListener('scroll', () => {
+let navbar = document.querySelector(".header");
+window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
-    navbar.classList.add('scrolled');
+    navbar.classList.add("scrolled");
   } else {
-    navbar.classList.remove('scrolled');
+    navbar.classList.remove("scrolled");
   }
 });
 
@@ -129,7 +129,7 @@ function changeBanner() {
 
 setInterval(changeBanner, 3000);
 
-// journey section slider 
+// journey section slider
 
 let slideshows = document.querySelectorAll(".journeys-slideshow");
 
@@ -143,12 +143,24 @@ slideshows.forEach((slideshow) => {
     let currentSlideElement = slideshow.querySelector(".slide" + currentSlide);
     let nextSlideElement = slideshow.querySelector(".slide" + nextSlide);
 
-    currentSlideElement.classList.remove("active");
-    nextSlideElement.classList.add("active");
+    currentSlideElement.style.opacity = 0;
+    nextSlideElement.style.opacity = 1;
+
+    currentSlideElement.style.pointerEvents = "none";
+    nextSlideElement.style.pointerEvents = "auto";
 
     currentSlide = nextSlide;
   }
 
+  slideElements.forEach((slide, index) => {
+    if (index === 0) {
+      slide.style.opacity = 1;
+      slide.style.pointerEvents = "auto";
+    } else {
+      slide.style.opacity = 0;
+      slide.style.pointerEvents = "none";
+    }
+  });
+
   setInterval(changeSlide, 5000);
 });
-
