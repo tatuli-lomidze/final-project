@@ -164,3 +164,23 @@ slideshows.forEach((slideshow) => {
 
   setInterval(changeSlide, 5000);
 });
+
+//  touch event
+
+var elements = document.querySelectorAll('.journeys-text-wrapper, .image-container, .btn-booking');
+
+function addTouchListeners() {
+  elements.forEach(function(element) {
+    element.addEventListener('touchstart', function() {
+      element.classList.add('active');
+    });
+
+    element.addEventListener('touchend', function() {
+      element.classList.remove('active');
+    });
+  });
+}
+
+if ('ontouchstart' in window || navigator.maxTouchPoints) {
+  addTouchListeners();
+}

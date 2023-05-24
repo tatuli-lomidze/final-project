@@ -10,11 +10,27 @@
     /* section - whats your next destination  */
     .home-page-text { 
         top: 15%; }
-        
+
+     /* sunscribe section */
+     #section2 h3 {
+        font-size: 30px;
+     }
+     .subscribe-container h2 {
+        font-size: 35px;
+     }
+
+     .stays-title h2 {
+        font-size: 35px;
+     }
     /* footer */
     .footer-container {
+    padding-top: 20px;
     flex-direction: column;
     gap: 20px;
+    }
+
+    .about-us{
+        gap: 20px;
     }
 }
 
@@ -26,13 +42,35 @@
     }
       /* journeys section */
        .journeys-section {
-         gap: 70px;
+        flex-direction: column;
+         gap: 6px;
   }
     /* section - whats your next destination  */
     .home-page-text {
         top: 20%;
       }
-
+ /* sunscribe section */
+     #section2 h3 {
+        font-size: 28px;
+     }
+     .subscribe-container h2 {
+        font-size: 32px;
+     }
+     /* journey section */
+     .journeys-container.left h2 {
+        font-size: 65px;
+      }
+/* stays */
+     .stays-container{
+        flex-direction: column;
+        gap: 20px;
+     }
+     .stays-block {
+        margin-top: 20px;
+     }
+     .stays-title h2 {
+        font-size: 32px;
+     }
       /* footer */
       .footer-container {
         flex-direction: column;
@@ -57,6 +95,10 @@
     }
 
     /* choose your destination */
+    /* header */
+    .ul-items {
+        gap: 30px;
+    }
     .home-page-paragraph {
         display: none;
       }
@@ -76,6 +118,30 @@
         max-width: 400px;
         width: 100%;
      }
+    
+      #section2 h3 {
+        font-size: 25px;
+     }
+     .subscribe-container h2 {
+        font-size: 30px;
+     }
+
+     /* journey section */
+     .journeys-container.left h2 {
+        font-size: 55px;
+      }
+    
+/* stays */
+     .stays-container{
+        flex-direction: column;
+        gap: 20px;
+     }
+     .stays-block {
+        margin-top: 20px;
+     }
+     .stays-title h2 {
+        font-size: 30px;
+     }
 
      /* footer */
      .footer-container {
@@ -89,8 +155,7 @@
               }
       .footer-container {
         gap: 15px;
-      }        
-
+      }    
  
 }
 
@@ -144,6 +209,7 @@
     }
     .list-items {
         color:blanchedalmond;
+        font-size: 25px;
     }
    .ul-items.active {
         left: 0;
@@ -155,19 +221,64 @@
     /* journeys section */
 
     .journeys-slideshow {
-        width: 290px;
-        height: 483px;
-      }
-      #slide {
+        max-width: 100%;
         width: 100%;
+        max-height: 400px;
+        height: 400px;
       }
-      
+    
+      .journeys-text-wrapper {
+        max-width: 100%;
+        width: 100%;
+        font-size: 18px;
+        padding: 5px;
+      }
+
+      .journeys-container.left h2 {
+        font-size: 45px;
+      }
+    
+    
      /* subscribe section  */
      .input-element {
         max-width: 270px;
         width: 100%; }
+    
+      #section2 h3 {
+        font-size: 22px;
+     }
+     .subscribe-container h2 {
+        font-size: 28px;
+     }
+/* stays */
+     .stays-container{
+        flex-direction: column;
+        gap: 20px;
+     }
+     .stays-block {
+        margin-top: 20px;
+     }
+     .stays-title h2 {
+        font-size: 28px;
+     }
 
-    /* hover effects */
+     /* footer */
+    
+     .about-us {
+        max-width: 260px;
+     }
+     .contact-info {
+       margin-top: 15px;
+       flex-direction: column;
+       gap: 20px;
+      }
+
+      .footer-container {
+        gap: 15px;
+      }  
+      
+
+     /* hover effects */
 
     /* header */
 
@@ -176,19 +287,10 @@
         color:slategrey;
         font-size: 35px;
     }
-     /* footer */
-    
-     .about-us {
-        max-width: 300px;
-     }
-     .contact-info {
-       margin-top: 15px;
-       flex-direction: column;
-       gap: 20px;
-              }
-      .footer-container {
-        gap: 15px;
-      }   
+
+    .journeys-text-wrapper:hover {
+        width: 280px;
+    }
 
 }
 
