@@ -29,6 +29,7 @@
 .list-items {
     color: black;
     transition: 1s ease-in-out;
+    font-family: 'Lora';
 }
 .toggle-button{
     position: absolute;
@@ -91,8 +92,8 @@
   
   .home-page-text h1 {
     font-size: 35px;
-    font-family: 'Inter-ExtraBold';
-    color: white;
+    font-family: 'Lora'; 
+       color: white;
     margin-bottom: 25px;
   }
   
@@ -102,7 +103,7 @@
   
   .home-page-text p:not(.explore-link) {
     font-size: 22px;
-    font-family: 'Inter-Medium';
+    font-family: 'Cabin';
     color: black;
     margin-bottom: 18px;
   }
@@ -110,7 +111,7 @@
   .explore-link  {
     display: inline-block;
     font-size: 22px;
-    font-family: 'Inter-Medium';
+    font-family: 'Lora';
     color: black;
     background-color: #ccc;
     border-radius: 15px;
@@ -131,6 +132,7 @@
     padding: 50px;
     margin-left: 10%;
     font-size: 50px;
+    font-family: 'Lora';
     border-bottom: 3px solid slategrey;
     border-left: 3px solid slategrey;
     border-radius: 100px;
@@ -152,7 +154,7 @@
     align-items: center;
     text-align: center;
     font-size: 40px;
-    font-family: 'Inter-ExtraBold';
+    font-family: 'Lora';
     margin-bottom: 50px;
     background-color: white;
     border-bottom: 3px solid slategrey;
@@ -195,6 +197,7 @@
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
+    font-family: 'Lora';
 }
 
   /* journeys section */
@@ -241,6 +244,7 @@
   
   .journeys-container.left h2 {
     font-size: 70px;
+    font-family: 'Lora';
     max-width: 360px;
     width: 100%;
     margin-bottom: 20px;
@@ -251,6 +255,7 @@
     max-width: 360px;
     width: 100%;
    font-size: 25px;
+   font-family: 'Cabin';
    border-radius: 30px;
    padding: 10px;
    margin-top: 10px;
@@ -271,6 +276,7 @@
  .journeys-text-wrapper h3 {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Lora';
  }
 
  .journey-button {
@@ -287,6 +293,7 @@
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
+    font-family: 'Lora';
     
   }
   
@@ -298,6 +305,7 @@
     padding: 50px;
     margin-left: 10%;
     font-size: 50px;
+    font-family: 'Lora';
     border-bottom: 3px solid slategrey;
     border-left: 3px solid slategrey;
     border-radius: 100px;
@@ -352,6 +360,7 @@
     padding: 10px 20px;
     cursor: pointer;
     font-size: 20px;
+    font-family: 'Lora';
     margin-bottom: 20px;
   }
 
@@ -383,10 +392,12 @@
 
   .image-overlay h3 {
     font-size: 35px;
+    font-family: 'Lora';
   }
 
   .image-overlay h4, h5, h6 {
     font-size: 16px;
+    font-family: 'Cabin';
   }
 
   /* footer */
@@ -399,6 +410,7 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
+    margin-bottom: 50px;
     /* flex-wrap: wrap; */
   }
   .contact-info {
@@ -415,6 +427,7 @@
 
 .about-us h2 {
   font-size: 30px;
+  font-family: 'Lora';
   margin-bottom: 7px;
   color: #333;
 }
@@ -428,11 +441,15 @@
   align-items: center;
   gap: 10px;
   font-size: 17px;
+  font-family: 'Lora';
+
+
   color: #333;
 }
 
 .contact a {
   color: #333;
+  font-family: 'Cabin';
 }
 .social {
   display: flex;
@@ -443,6 +460,7 @@
   font-size: 30px;
   margin-bottom: 7px;
   color: #333;
+  font-family: 'Cabin';
 }
 
 .fa-brands {
@@ -453,6 +471,16 @@
 .about-us p {
   font-size: 17;
   color: #333;
+  font-family: 'Cabin';
+}
+
+/* copyright */
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lora';
+
 }
 /* hover effects*/
 
@@ -512,3 +540,12 @@
   transform: scale(1.1); 
 }
 
+/* footer */
+.contact a:hover {
+  font-size: 18px;
+  color: firebrick;
+}
+
+.fa-brands:hover {
+  font-size: 35px;
+}

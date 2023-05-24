@@ -10,6 +10,12 @@
     /* section - whats your next destination  */
     .home-page-text { 
         top: 15%; }
+        
+    /* footer */
+    .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    }
 }
 
 /* max-width: 1024px*/
@@ -26,6 +32,14 @@
     .home-page-text {
         top: 20%;
       }
+
+      /* footer */
+      .footer-container {
+        flex-direction: column;
+            }
+       .contact-info {
+      gap: 50px;
+            }
 }
 
 /* max-width: 768px*/
@@ -62,6 +76,20 @@
         max-width: 400px;
         width: 100%;
      }
+
+     /* footer */
+     .footer-container {
+        gap: 3px;
+        }
+     .about-us {
+        max-width: 450px;
+     }
+     .contact-info {
+       margin-top: 15px;
+              }
+      .footer-container {
+        gap: 15px;
+      }        
 
  
 }
@@ -148,6 +176,19 @@
         color:slategrey;
         font-size: 35px;
     }
+     /* footer */
+    
+     .about-us {
+        max-width: 300px;
+     }
+     .contact-info {
+       margin-top: 15px;
+       flex-direction: column;
+       gap: 20px;
+              }
+      .footer-container {
+        gap: 15px;
+      }   
 
 }
 

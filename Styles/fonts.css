@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Lora';
+    src: url('../Fonts/Lora-Regular.eot');
+    src: url('../Fonts/Lora-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Lora-Regular.woff2') format('woff2'),
+        url('../Fonts/Lora-Regular.woff') format('woff'),
+        url('../Fonts/Lora-Regular.svg#Lora-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('../Fonts/Cabin-Regular.eot');
+    src: url('../Fonts/Cabin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Cabin-Regular.woff2') format('woff2'),
+        url('../Fonts/Cabin-Regular.woff') format('woff'),
+        url('../Fonts/Cabin-Regular.svg#Cabin-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
