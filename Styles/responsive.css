@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* max-width: 1201px  */
 
 
@@ -25,7 +32,10 @@
     /* footer */
     .footer-container {
     padding-top: 20px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
     }
 
@@ -42,7 +52,10 @@
     }
       /* journeys section */
        .journeys-section {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
          gap: 6px;
   }
     /* section - whats your next destination  */
@@ -62,7 +75,10 @@
       }
 /* stays */
      .stays-container{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 20px;
      }
      .stays-block {
@@ -73,7 +89,10 @@
      }
       /* footer */
       .footer-container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
             }
        .contact-info {
       gap: 50px;
@@ -85,7 +104,10 @@
 @media (max-width: 768px) {
     /* header */
     .header-block {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 20px;
         padding-bottom: 20px;
     }
@@ -133,7 +155,10 @@
     
 /* stays */
      .stays-container{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 20px;
      }
      .stays-block {
@@ -165,7 +190,9 @@
     .header-block {
         gap: 0px;
         margin-bottom: 0px;  
-        align-items: flex-start;    
+        -webkit-box-align: start;  
+            -ms-flex-align: start;  
+                align-items: flex-start;    
     }
     .home-page-paragraph {
         display: none;
@@ -182,29 +209,42 @@
         font-size: 20px;
     }
     .toggle-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .toggle-button.active .bar:nth-child(2){
         opacity: 0;
     }
     .toggle-button.active .bar:nth-child(1){
-        transform:translateY(8px) rotate(45deg);
+        -webkit-transform:translateY(8px) rotate(45deg);
+            -ms-transform:translateY(8px) rotate(45deg);
+                transform:translateY(8px) rotate(45deg);
     }
     .toggle-button.active .bar:nth-child(3){
-        transform:translateY(-8px) rotate(-45deg);
+        -webkit-transform:translateY(-8px) rotate(-45deg);
+            -ms-transform:translateY(-8px) rotate(-45deg);
+                transform:translateY(-8px) rotate(-45deg);
     } 
     .ul-items {
         position: fixed;
         height: 100vh;
         left: -100%;
         padding-top: 40%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         background-image: url("../IMG/burger-background.jpg");
         background-size: cover;
         width: 100%;
-        align-items: center; 
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; 
         font-size:x-large;
         font-weight:bold;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;    
     }
     .list-items {
@@ -252,7 +292,10 @@
      }
 /* stays */
      .stays-container{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 20px;
      }
      .stays-block {
@@ -262,6 +305,18 @@
         font-size: 28px;
      }
 
+     .image-overlay h3 {
+        font-size: 28px;
+        font-family: 'Lora';
+        text-align: center;
+      }
+    
+      .image-overlay h4, h5, h6 {
+        font-size: 16px;
+        font-family: 'Cabin';
+        text-align: center;
+      }
+
      /* footer */
     
      .about-us {
@@ -269,7 +324,10 @@
      }
      .contact-info {
        margin-top: 15px;
-       flex-direction: column;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
        gap: 20px;
       }
 
@@ -293,4 +351,3 @@
     }
 
 }
-

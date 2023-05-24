@@ -167,7 +167,7 @@ slideshows.forEach((slideshow) => {
 
 //  touch event
 
-var elements = document.querySelectorAll('.journeys-text-wrapper, .image-container, .btn-booking');
+let elements = document.querySelectorAll('.journeys-text-wrapper, .image-container, .btn-booking');
 
 function addTouchListeners() {
   elements.forEach(function(element) {
