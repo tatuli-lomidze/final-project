@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="unforgettable journeys filled with adventure, relaxation, and cultural immersion"
+    />
+    <meta name="keywords" content="flight tickets, hotels booking" />
+    <meta name="author" content="Tatuli Lomidze" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Traveller" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tatuli-lomidze.github.io/final-project/"
+    />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="Let us guide you on unforgettable journeys filled with adventure, relaxation, and cultural immersion."
+    />
     <title>Traveller</title>
     <link
       rel="stylesheet"
@@ -19,7 +36,7 @@
     <!-- header  -->
     <header class="header">
       <div class="header-block">
-        <div class="logo.png">
+        <div class="logo">
           <a href="index.html"
             ><img class="logo" src="IMG/color-logo.png" alt="logo"
           /></a>
@@ -33,12 +50,12 @@
         <nav class="nav-bar">
           <ul class="ul-items">
             <li><a href="#section1" class="list-items js-scroll">HOME</a></li>
+            <li><a href="#section2" class="list-items js-scroll">OFFERS</a></li>
             <li>
               <a href="#section3" class="list-items js-scroll">JOURNEYS</a>
             </li>
-            <li><a href="#" class="list-items js-scroll">STAYS</a></li>
-            <li><a href="#" class="list-items js-scroll">PARTNERS</a></li>
-            <li><a href="#" class="list-items js-scroll">CONTACT</a></li>
+            <li><a href="#section4" class="list-items js-scroll">STAYS</a></li>
+            <li><a href="#footer" class="list-items js-scroll">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -63,65 +80,71 @@
           </p>
           <a class="js-scroll" href="#section2"
             ><p class="explore-link">
-              Start exploring today! <i class="fa-solid fa-location-dot"></i></p
+              Start exploring today! <i class="fas fa-location-dot"></i></p
           ></a>
         </div>
       </section>
-        <!-- subscribe section -->
-        <section id="section2">
-          <h3>"Travel is the only thing you can buy that makes you richer." - Anonymous
-          </h2>
-          <div class="subscribe-container">
-            <h2>Subscribe now and get 20% OFF on your first trip</h2>
-            <!-- form for subscribtion -->
-            <div class="form-wrapper">
-              <form id="form" action="/action_page.php" method="post">
-                <div>
-                  <label for="email"></label>
-                  <input
-                    class="input-element"
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                  <p class="error-text" id="error-email"></p>
-                </div>
-                <div>
-                  <label for="name"></label>
-                  <input
-                    class="input-element"
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Full name"
-                  />
-                  <p class="error-text" id="error-name"></p>
-                </div>
-                <div>
-                  <label for="phone"></label>
-                  <input
-                    class="input-element"
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                    placeholder="Phone number - 5XX-XX-XX-XX"
-                  />
-                  <p class="error-text" id="error-phone"></p>
-                </div>
-                <div>
-                  <button class="input-element form-btn" type="submit">Subscribe</button>
-                </div>
-              </form>
-            </div>
+      <!-- subscribe section -->
+      <section id="section2">
+        <h3>
+          "Travel is the only thing you can buy that makes you richer." -
+          Anonymous
+        </h3>
+        <div class="subscribe-container">
+          <h2>Subscribe now and get 20% OFF on your first trip</h2>
+          <!-- form for subscription -->
+          <div class="form-wrapper">
+            <form id="form" action="/action_page.php" method="post">
+              <div>
+                <label for="email"></label>
+                <input
+                  class="input-element"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
+                <p class="error-text" id="error-email"></p>
+              </div>
+              <div>
+                <label for="name"></label>
+                <input
+                  class="input-element"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full name"
+                />
+                <p class="error-text" id="error-name"></p>
+              </div>
+              <div>
+                <label for="phone"></label>
+                <input
+                  class="input-element"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  placeholder="Phone number - 5XX-XX-XX-XX"
+                />
+                <p class="error-text" id="error-phone"></p>
+              </div>
+              <div>
+                <button class="input-element form-btn" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
           </div>
-        </section>
+        </div>
+      </section>
       <!-- journeys section  -->
       <section id="section3">
         <div class="journeys-section">
           <div class="journeys-container left">
-            <div class="journey-title"><h2>choose your dream land...</h2></div>
+            <div class="journey-title">
+              <h2>choose your dream land...</h2>
+            </div>
             <!-- slideshow 1 -->
             <div class="journeys-slideshow">
               <div class="slide">
@@ -132,21 +155,33 @@
             </div>
             <!-- text wrapper 1 -->
             <div class="journeys-text-wrapper">
-              <h3>Positano, Italy <i class="fa-solid fa-location-dot"></i></h3>
+              <h3>Positano, Italy <i class="fas fa-location-dot"></i></h3>
               <p>From 1100$</p>
               <button class="journey-button" type="submit">See more</button>
             </div>
             <!-- slideshow 2-->
             <div class="journeys-slideshow">
               <div class="slide">
-                <img class="slide1" src="IMG/switzerland1.jpg" alt="switzerland" />
-                <img class="slide2" src="IMG/switzerland2.jpg" alt="switzerland" />
-                <img class="slide3" src="IMG/switzerland3.jpg" alt="switzerland" />
+                <img
+                  class="slide1"
+                  src="IMG/switzerland1.jpg"
+                  alt="switzerland"
+                />
+                <img
+                  class="slide2"
+                  src="IMG/switzerland2.jpg"
+                  alt="switzerland"
+                />
+                <img
+                  class="slide3"
+                  src="IMG/switzerland3.jpg"
+                  alt="switzerland"
+                />
               </div>
             </div>
             <!-- text wrapper 2-->
             <div class="journeys-text-wrapper">
-              <h3>Alps, Switzerland <i class="fa-solid fa-location-dot"></i></h3>
+              <h3>Alps, Switzerland <i class="fas fa-location-dot"></i></h3>
               <p>From 1500$</p>
               <button class="journey-button" type="submit">See more</button>
             </div>
@@ -163,7 +198,7 @@
             </div>
             <!-- text wrapper 3 -->
             <div class="journeys-text-wrapper">
-              <h3>Santorini, Greece <i class="fa-solid fa-location-dot"></i></h3>
+              <h3>Santorini, Greece <i class="fas fa-location-dot"></i></h3>
               <p>From 1200$</p>
               <button class="journey-button" type="submit">See more</button>
             </div>
@@ -177,15 +212,225 @@
             </div>
             <!-- text wrapper 4 -->
             <div class="journeys-text-wrapper">
-              <h3>Dubrovnik, Croatia <i class="fa-solid fa-location-dot"></i> </h3>
+              <h3>Dubrovnik, Croatia <i class="fas fa-location-dot"></i></h3>
               <p>From 700$</p>
               <button class="journey-button" type="submit">See more</button>
             </div>
           </div>
         </div>
       </section>
+      <!-- stays section  -->
+      <section id="section4">
+        <div class="stays-title"><h2>Where to stay...</h2></div>
+        <div class="stays-block">
+          <!-- top container for stays  -->
+          <div class="stays-container top">
+            <!-- hotel image container  -->
+            <div class="booking-container">
+              <div class="image-container">
+                <img src="IMG/hotel-paris.jpg" alt="paris" />
+                <!-- hotel text overlay -->
+                <div class="image-overlay">
+                  <h3>Paris, France</h3>
+                  <h4>
+                    24-hour concierge service to assist with any requests
+                    <i class="fa-solid fa-bell-concierge"></i>
+                  </h4>
+                  <h5>
+                    Complimentary Wi-Fi throughout the hotel
+                    <i class="fa-solid fa-wifi"></i>
+                  </h5>
+                  <h6>
+                    Includes breakfast <i class="fa-solid fa-utensils"></i>
+                  </h6>
+                </div>
+              </div>
+              <button class="btn-booking" type="submit">
+                Book Now <i class="fa-solid fa-hotel"></i>
+              </button>
+            </div>
+            <!-- hotel image container  -->
+            <div class="booking-container">
+              <div class="image-container">
+                <img src="IMG/hotel-copenhagen.jpg" alt="copenhagen" />
+                <!-- hotel text overlay -->
+                <div class="image-overlay">
+                  <h3>Copenhagen, Denmark</h3>
+                  <h4>
+                    24-hour concierge service to assist with any requests
+                    <i class="fa-solid fa-bell-concierge"></i>
+                  </h4>
+                  <h5>
+                    Complimentary Wi-Fi throughout the hotel
+                    <i class="fa-solid fa-wifi"></i>
+                  </h5>
+                  <h6>
+                    Includes breakfast <i class="fa-solid fa-utensils"></i>
+                  </h6>
+                </div>
+              </div>
+              <button class="btn-booking" type="submit">
+                Book Now <i class="fa-solid fa-hotel"></i>
+              </button>
+            </div>
+            <!-- hotel image container  -->
+            <div class="booking-container">
+              <div class="image-container">
+                <img src="IMG/hotel-bali.jpg" alt="bali" />
+                <!-- hotel text overlay -->
+                <div class="image-overlay">
+                  <h3>Bali, Indonesia</h3>
+                  <h4>
+                    24-hour concierge service to assist with any requests
+                    <i class="fa-solid fa-bell-concierge"></i>
+                  </h4>
+                  <h5>
+                    Complimentary Wi-Fi throughout the hotel
+                    <i class="fa-solid fa-wifi"></i>
+                  </h5>
+                  <h6>
+                    Includes breakfast <i class="fa-solid fa-utensils"></i>
+                  </h6>
+                </div>
+              </div>
+              <button class="btn-booking" type="submit">
+                Book Now <i class="fa-solid fa-hotel"></i>
+              </button>
+            </div>
+          </div>
+          <!-- bottom container for stays  -->
+          <div class="stays-container bottom">
+            <!-- hotel image container  -->
+            <div class="booking-container">
+              <div class="image-container">
+                <img src="IMG/hotel-madrid.jpg" alt="madrid" />
+                <!-- hotel text overlay -->
+                <div class="image-overlay">
+                  <h3>Madrid, Spain</h3>
+                  <h4>
+                    24-hour concierge service to assist with any requests
+                    <i class="fa-solid fa-bell-concierge"></i>
+                  </h4>
+                  <h5>
+                    Complimentary Wi-Fi throughout the hotel
+                    <i class="fa-solid fa-wifi"></i>
+                  </h5>
+                  <h6>
+                    Includes breakfast <i class="fa-solid fa-utensils"></i>
+                  </h6>
+                </div>
+              </div>
+              <button class="btn-booking" type="submit">
+                Book Now <i class="fa-solid fa-hotel"></i>
+              </button>
+            </div>
+            <!-- hotel image container  -->
+            <div class="booking-container">
+              <div class="image-container">
+                <img src="IMG/hotel-tailand.jpg" alt="tailand" />
+                <!-- hotel text overlay -->
+                <div class="image-overlay">
+                  <h3>Bangkok, Tailand</h3>
+                  <h4>
+                    24-hour concierge service to assist with any requests
+                    <i class="fa-solid fa-bell-concierge"></i>
+                  </h4>
+                  <h5>
+                    Complimentary Wi-Fi throughout the hotel
+                    <i class="fa-solid fa-wifi"></i>
+                  </h5>
+                  <h6>
+                    Includes breakfast <i class="fa-solid fa-utensils"></i>
+                  </h6>
+                </div>
+              </div>
+              <button class="btn-booking" type="submit">
+                Book Now <i class="fa-solid fa-hotel"></i>
+              </button>
+            </div>
+            <!-- hotel image container  -->
+            <div class="booking-container">
+              <div class="image-container">
+                <img src="IMG/hotel-vienna.jpg" alt="vienna" />
+                <!-- hotel text overlay -->
+                <div class="image-overlay">
+                  <h3>Vienna, Austria</h3>
+                  <h4>
+                    24-hour concierge service to assist with any requests
+                    <i class="fa-solid fa-bell-concierge"></i>
+                  </h4>
+                  <h5>
+                    Complimentary Wi-Fi throughout the hotel
+                    <i class="fa-solid fa-wifi"></i>
+                  </h5>
+                  <h6>
+                    Includes breakfast <i class="fa-solid fa-utensils"></i>
+                  </h6>
+                </div>
+              </div>
+              <button class="btn-booking" type="submit">
+                Book Now <i class="fa-solid fa-hotel"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="about-us">
+          <img src="IMG/color-logo.png" alt="logo" />
+          <h2>About us</h2>
+          <p>
+            At Traveller, we believe that travel has the power to enrich and
+            transform lives. That's why we curate a diverse range of dream
+            destinations, from picturesque landscapes to vibrant cities,
+            ensuring there's something for every type of traveler. Our team of
+            experienced travel enthusiasts is dedicated to crafting personalized
+            itineraries that cater to your unique preferences and interests.
+            Start exploring today and let us guide you on an extraordinary
+            travel experience.
+          </p>
+        </div>
+        <div class="contact-info">
+          <div class="contact">
+            <h2>Contact info</h2>
+            <a href="tel:+995599066633"
+              >Call Now <i class="fa-solid fa-phone-flip"></i
+            ></a>
+            <a href="mailto:tatulilomidze1@gmail.com"
+              >Ask anything about your next trip
+              <i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="https://goo.gl/maps/co19B9cQHE9FVnq2A" target="_blank"
+              >Adress: 56th st. nyc. usa</a
+            >
+          </div>
+          <div class="follow-us">
+            <h2>follow us</h2>
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>
+          Copyright © <span class="copy-span">Traveller</span> | Designed by
+          <span class="copy-span">Tatuli Lomidze</span> Templates - Powered by
+          <span class="copy-span">Webflow</span>
+        </p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
